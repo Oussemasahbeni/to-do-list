@@ -1,0 +1,44 @@
+body{
+    font-family: Arial;
+}
+
+.todo-grid,
+.todo-input{
+    display: grid;
+    grid-template-columns: 200px 150px 100px;   
+    column-gap: 10px;
+    row-gap: 10px;  
+    align-items: center; 
+    /* align-items is by default stretch */
+}
+
+.todo-input{
+    margin-bottom: 10px;
+    align-items: stretch;
+    /* we need to change this back to stretch because we changed it to center */
+}
+
+.name-input,
+.due-date-input{
+    font-size: 15px;
+    padding: 6px;
+}
+
+.btn-add{
+    background-color: green;
+    border:none;
+    color:white;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+.btn-delete{
+    background-color: darkred;
+    border:none;
+    color:white;
+    cursor: pointer;
+    font-size: 15px;
+    padding:10px;
+}
+
+
